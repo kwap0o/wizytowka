@@ -1,0 +1,80 @@
+body{
+    background: url(https://cdn.pixabay.com/photo/2017/03/15/01/40/krakow-2144879_1280.jpg);
+    background-size: cover ;    
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.wizytówka{
+    position: relative;
+    height: 220px;
+    width: 300px;
+    padding: 2vb;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color:rgba(250, 235, 215, 0.575) ;
+    border-radius: 3%;
+}    
+
+.left{
+    position: absolute;
+    height: 100%;
+    width: 70%;
+    left: 0px;
+    top: 10px;
+}
+
+.right{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    left: 30%;
+    
+}
+.right p{
+    font-size: 1.4vb;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.right p:hover{
+    color: red;
+    transition: 0.5s;
+}
+h1{
+    font-size: 80%;
+}
+p{
+    font-size: 80%;
+
+}
+
+img{
+    position: absolute;
+    border-radius: 50%;
+    margin-top: 25%;
+    left: 15%;
+    align-content: center;
+    height: 150px;
+    width: 150px;
+    box-sizing: border-box;
+}
+.button{
+    border: 3px solid black;
+    padding: 1vb;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.button:hover{
+    background-color: rgba(0, 0, 167, 0.143);
+}
