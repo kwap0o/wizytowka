@@ -78,3 +78,12 @@ img{
 .button:hover{
     background-color: rgba(0, 0, 167, 0.143);
 }
+
+.wizytówka::after{}
+
+@media (min-widt:300px ){
+    body{
+        background-image: url(https://cdn.pixabay.com/photo/2016/03/27/19/31/city-1283864_1280.jpg);
+    }
+   
+}
