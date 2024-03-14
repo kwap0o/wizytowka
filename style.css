@@ -1,89 +1,126 @@
-body{
+body {
     background: url(https://cdn.pixabay.com/photo/2017/03/15/01/40/krakow-2144879_1280.jpg);
-    background-size: cover ;    
+    background-size: cover;
     background-repeat: no-repeat;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    width: 100vw;
     overflow: hidden;
 }
 
-.wizytówka{
-    position: relative;
-    height: 220px;
-    width: 300px;
-    padding: 2vb;
+.wizytówka {
     display: flex;
-    justify-content: space-around;
+    height: 30%;
+    width: 50%;
+    max-width: 850px;
+    padding: 2vb;
+    justify-content: center;
     align-items: center;
-    background-color:rgba(250, 235, 215, 0.575) ;
+    background-color: rgba(199, 199, 199, 0.575);
     border-radius: 3%;
-}    
-
-.left{
-    position: absolute;
-    height: 100%;
-    width: 70%;
-    left: 0px;
-    top: 10px;
 }
 
-.right{
-    position: absolute;
+.left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 100%;
     width: 100%;
+}
+
+.left img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    box-sizing: border-box;
+    padding: 8%;
+}
+
+.right {
+    height: 100%;
+    width: 100%;
+    min-width: 50px;
     display: flex;
     justify-content: space-around;
     flex-direction: column;
     align-items: center;
-    left: 30%;
-    
+    font-family: sans-serif;
 }
-.right p{
-    font-size: 1.4vb;
+
+.right p {
+    display: flex;
+    gap: 10px;
+    font-size: 2vw;
     text-decoration: underline;
     cursor: pointer;
 }
 
-.right p:hover{
-    color: red;
-    transition: 0.5s;
-}
-h1{
-    font-size: 80%;
-}
-p{
-    font-size: 80%;
-
+.right p svg {
+    width: 1.8vw;
+    opacity: 70%;
 }
 
-img{
-    position: absolute;
-    border-radius: 50%;
-    margin-top: 25%;
-    left: 15%;
-    align-content: center;
-    height: 150px;
-    width: 150px;
-    box-sizing: border-box;
+.right p:hover {
+    color: rgb(144, 94, 0);
+    transition: ease-in-out 0.5s;
 }
-.button{
-    border: 3px solid black;
+
+.right h1 {
+    font-size: 3vw;
+}
+
+.cv button {
+    height: 5vh;
+    width: 12vw;
+    font-size: 1.5vw;
+    border: none;
     padding: 1vb;
     border-radius: 10px;
     text-decoration: none;
 }
 
-.button:hover{
+.cv button:hover {
+    transition: all ease-in-out 0.3s;
     background-color: rgba(0, 0, 167, 0.143);
 }
 
-.wizytówka::after{}
-
-@media (min-widt:300px ){
-    body{
+@media (max-width:450px) {
+    body {
         background-image: url(https://cdn.pixabay.com/photo/2016/03/27/19/31/city-1283864_1280.jpg);
     }
-   
+    .wizytówka {
+        width: 80%;
+    }
+    .right h1 {
+        font-size: 20px;
+    }
+    .right p {
+        font-size: 16px;
+    }
+    .left img {
+        min-height: 70%;
+        min-width: 90%;
+    }
+    .right p svg {
+        display: none;
+    }
+    .cv button {
+        width: 22vw;
+    }
+}
+
+@media screen and (min-width:1950px) {
+    .right h1 {
+        font-size: 58px;
+    }
+    .right p {
+        font-size: 38px;
+        display: flex;
+        gap: 5px;
+    }
 }
